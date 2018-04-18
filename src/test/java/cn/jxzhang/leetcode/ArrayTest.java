@@ -10,7 +10,7 @@ import java.util.Arrays;
  * @author zhangjiaxing
  * @version 1.0
  */
-public class Main {
+public class ArrayTest {
 
     /**
      * 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
@@ -83,9 +83,12 @@ public class Main {
      *
      * 示例 2:
      *
-     * 输入: [4,3,2,1]
-     * 输出: [4,3,2,2]
-     * 解释: 输入数组表示数字 4321。
+     *   输入: [4,3,2,1]
+     *
+     *   输出: [4,3,2,2]
+     *
+     *   解释: 输入数组表示数字 4321。
+     *
      */
     @Test
     public void test3() {
@@ -94,7 +97,7 @@ public class Main {
         System.out.println(Arrays.toString(nums));
     }
 
-    public int[] plusOne(int[] digits) {
+    private int[] plusOne(int[] digits) {
         int[] result = new int[digits.length + 1];
 
         for (int i = digits.length - 1; i >= 0; i--) {
